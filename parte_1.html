@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Grids Adaptable</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        p {
+            margin: 0;
+        }
+        .border {
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Primera fila con una sola columna que abarca todo el ancho para pantallas extragrandes, fondo verde, texto blanco, centrado -->
+    <div class="row mb-3">
+        <div class="col-12 col-xl-12 bg-success p-4 text-white text-center border">
+            <p>col-extra large</p>
+        </div>
+    </div>
+
+    <!-- Segunda fila con dos columnas para pantallas grandes (cada una ocupa la mitad del ancho disponible), fondo azul, texto a la derecha, color negro -->
+    <div class="row mb-3">
+        <div class="col-12 col-lg-6 bg-primary p-4 text-black text-end border">
+            <p>col-large</p>
+        </div>
+        <div class="col-12 col-lg-6 bg-primary p-4 text-black text-end border">
+            <p>col-large</p>
+        </div>
+    </div>
+
+    <!-- Tercera fila con tres columnas para pantallas medianas (cada una ocupa un tercio del ancho disponible), fondo amarillo, texto rojo, centrado -->
+    <div class="row mb-3">
+        <div class="col-12 col-md-4 bg-warning p-4 text-danger text-center border">
+            <p>col-medium</p>
+        </div>
+        <div class="col-12 col-md-4 bg-warning p-4 text-danger text-center border">
+            <p>col-medium</p>
+        </div>
+        <div class="col-12 col-md-4 bg-warning p-4 text-danger text-center border">
+            <p>col-medium</p>
+        </div>
+    </div>
+
+    <!-- Cuarta fila con cuatro columnas para pantallas pequeñas (cada una ocupa un cuarto del ancho disponible), fondo rojo, texto a la izquierda -->
+    <div class="row mb-3">
+        <div class="col-12 col-sm-3 bg-danger p-4 text-white text-start border">
+            <p>col-small</p>
+        </div>
+        <div class="col-12 col-sm-3 bg-danger p-4 text-white text-start border">
+            <p>col-small</p>
+        </div>
+        <div class="col-12 col-sm-3 bg-danger p-4 text-white text-start border">
+            <p>col-small</p>
+        </div>
+        <div class="col-12 col-sm-3 bg-danger p-4 text-white text-start border">
+            <p>col-small</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
